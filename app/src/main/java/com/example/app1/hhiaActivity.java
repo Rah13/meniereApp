@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class surveyActivity extends AppCompatActivity {
+public class hhiaActivity extends AppCompatActivity {
 
     //Surveys - DHI, HHIA, TRQ
 
     int counter = 0;
-    int score = 0;
+    final int surveyNum = 1;
+
     //String[] some_array = getResources().getStringArray(R.array.your_string_array)
     String[] questions = {"Does a hearing problem cause you to use the phone less often than you would like?",
             "Does a hearing problem cause you to feel embarrassed when meeting new people?",
@@ -48,6 +49,10 @@ public class surveyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
 
+        Intent intent = getIntent();
+        final int[] scores = intent.getIntArrayExtra("com.example.app1.SCORES");
+
+
         TextView questionTextView = (TextView)findViewById(R.id.questionTextView);
         questionTextView.setText(questions[counter]);
 
@@ -59,10 +64,8 @@ public class surveyActivity extends AppCompatActivity {
                 if(counter>=len){
                     counter = 0;
                     //action
-                    Intent storeIntent = new Intent(surveyActivity.this,resultActivity.class);
-                    storeIntent.putExtra("com.example.app1.HHIASCORE",score);
-
-                    Intent startIntent = new Intent(surveyActivity.this,trqActivity.class);
+                    Intent startIntent = new Intent(hhiaActivity.this,trqStartActivity.class);
+                    startIntent.putExtra("com.example.app1.SCORES",scores);
                     startActivity(startIntent);
                 }
                 TextView questionTextView = (TextView)findViewById(R.id.questionTextView);
@@ -71,41 +74,38 @@ public class surveyActivity extends AppCompatActivity {
             }
         });
 
-        Button add1Btn = (Button)findViewById(R.id.add1Btn);
-        add1Btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                score++;
-                counter++;
-                if(counter>=len){
-                    counter = 0;
-                    //action
-                    Intent storeIntent = new Intent(surveyActivity.this,resultActivity.class);
-                    storeIntent.putExtra("com.example.app1.HHIASCORE",score);
-
-                    Intent startIntent = new Intent(surveyActivity.this,trqActivity.class);
-                    startActivity(startIntent);
-                }
-                TextView questionTextView = (TextView)findViewById(R.id.questionTextView);
-                questionTextView.setText(questions[counter]);
-                display = questions[counter];
-            }
-
-        });
-
-        Button add2Btn = (Button)findViewById(R.id.add2Btn);
+        Button add2Btn = (Button)findViewById(R.id.add1Btn);
         add2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                score = score + 2;
+                scores[surveyNum] = scores[surveyNum] + 2;
                 counter++;
                 if(counter>=len){
                     counter = 0;
                     //action
-                    Intent storeIntent = new Intent(surveyActivity.this,resultActivity.class);
-                    storeIntent.putExtra("com.example.app1.HHIASCORE",score);
+                    Intent startIntent = new Intent(hhiaActivity.this,trqStartActivity.class);
+                    startIntent.putExtra("com.example.app1.SCORES",scores);
+                    startActivity(startIntent);
 
-                    Intent startIntent = new Intent(surveyActivity.this,trqActivity.class);
+            }
+                TextView questionTextView = (TextView)findViewById(R.id.questionTextView);
+                questionTextView.setText(questions[counter]);
+                display = questions[counter];
+            }
+
+        });
+
+        Button add4Btn = (Button)findViewById(R.id.add2Btn);
+        add4Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scores[surveyNum] = scores[surveyNum] + 4;
+                counter++;
+                if(counter>=len){
+                    counter = 0;
+                    //action
+                    Intent startIntent = new Intent(hhiaActivity.this,trqStartActivity.class);
+                    startIntent.putExtra("com.example.app1.SCORES",scores);
                     startActivity(startIntent);
                 }
                 TextView questionTextView = (TextView)findViewById(R.id.questionTextView);

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medicalTab">
+
+
+    <EditText
+        android:id="@+id/dobEditText2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dateOfDiagnosisTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/conditionsEditText" />
+
+    <TextView
+        android:id="@+id/dateOfDiagnosisTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Date of Diagnosis"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/conditionsEditText"
+        app:layout_constraintTop_toBottomOf="@+id/conditionsEditText" />
+
+    <TextView
+        android:id="@+id/doctorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Doctor"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/doctorEditText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="Docter"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/doctorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/doctorTextView" />
+
+
+    <TextView
+        android:id="@+id/dateOfDiagnosisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Date of Diagnosis"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagnosisSpinner" />
+
+    <EditText
+        android:id="@+id/dobEditText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateOfDiagnosisTextView"
+        app:layout_constraintTop_toBottomOf="@+id/diagnosisSpinner" />
+
+    <TextView
+        android:id="@+id/DiagnosisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Diagnosis"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorEditText" />
+
+    <Spinner
+        android:id="@+id/diagnosisSpinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/DiagnosisTextView"
+        app:layout_constraintTop_toBottomOf="@+id/DiagnosisTextView" />
+
+
+    <TextView
+        android:id="@+id/conditionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Other Health Conditions"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfDiagnosisTextView" />
+
+    <EditText
+        android:id="@+id/conditionsEditText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="Other Conditions"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/conditionsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/conditionsTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

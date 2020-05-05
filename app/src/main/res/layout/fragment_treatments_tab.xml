@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".treatmentsTab">
+
+
+
+    <TextView
+        android:id="@+id/treatmentTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Treatment 1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/treatmentSpinner1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentTextView1" />
+
+
+
+    <EditText
+        android:id="@+id/endEditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateTextView1" />
+
+    <EditText
+        android:id="@+id/startEditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/startDateTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/startDateTextView1" />
+
+    <TextView
+        android:id="@+id/startDateTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Start Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentSpinner1" />
+
+    <TextView
+        android:id="@+id/endDateTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="End Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/endEditText1"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentSpinner1" />
+
+
+    <TextView
+        android:id="@+id/treatmentTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Treatment 2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startEditText1" />
+
+
+    <Spinner
+        android:id="@+id/treatmentSpinner2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentTextView2" />
+
+    <EditText
+        android:id="@+id/endEditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateTextView2" />
+
+    <EditText
+        android:id="@+id/startEditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/startDateTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/startDateTextView2" />
+
+    <TextView
+        android:id="@+id/startDateTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Start Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentSpinner2" />
+
+    <TextView
+        android:id="@+id/endDateTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="End Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/endEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentSpinner2" />
+
+
+    <TextView
+        android:id="@+id/treatmentTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Treatment 3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startEditText2" />
+
+
+    <Spinner
+        android:id="@+id/treatmentSpinner3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentTextView3" />
+
+    <EditText
+        android:id="@+id/endEditText3"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateTextView3" />
+
+    <EditText
+        android:id="@+id/startEditText3"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/startDateTextView3"
+        app:layout_constraintTop_toBottomOf="@+id/startDateTextView3" />
+
+    <TextView
+        android:id="@+id/startDateTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Start Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentSpinner3" />
+
+    <TextView
+        android:id="@+id/endDateTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="End Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/endEditText3"
+        app:layout_constraintTop_toBottomOf="@+id/treatmentSpinner3" />
+
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endEditText3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

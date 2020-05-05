@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".resultActivity"></activity>
+        <activity android:name=".tabsActivity"></activity>
+        <activity android:name=".profilePageActivity" />
+        <activity android:name=".dhiActivity" />
+        <activity android:name=".hhiaActivity" />
+        <activity android:name=".trqStartActivity" />
+        <activity android:name=".hhiaStartActivity" />
+        <activity android:name=".dhiStartActivity" />
+        <activity android:name=".editProfileActivity" />
+        <activity android:name=".trqActivity" />
+        <activity android:name=".profileActivity" />
+        <activity android:name=".resultActivity" />
         <activity android:name=".surveyActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
